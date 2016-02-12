@@ -51,7 +51,7 @@
                 if (e.type == 'mouseleave' && !shown)
                     return;
             }
-            typeof enforcePos !== 'undefined' : enforcePosition(null, null) : console.log('No positioning info given');
+            typeof enforcePos !== 'undefined' : enforcePosition(enforcePos) : console.log('No positioning info given');
             area.stop().toggle();
             shown = !shown;
             return false;
